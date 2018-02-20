@@ -13,7 +13,7 @@ var config = {
         publicPath: 'http://localhost:8080/built/'
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.less']
     },
     externals: [
         {
