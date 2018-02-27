@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Works.less';
+import '../Styles/works.less';
 
 export default class Works extends React.Component{
     constructor(props){

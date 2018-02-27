@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import VersionView from './Views/VersionView';
-import WorksView from './Views/WorksView';
+import IndexView from './Views/IndexView';
+import { Provider } from 'react-redux'
+import store from "./Reducers/store.js";
 
-class App extends React.Component {
-};
-
-ReactDOM.render(<WorksView />, document.getElementById('app'));
+ReactDOM.render(
+    <Provider store={store}>
+        <IndexView />
+    </Provider>
+    , document.getElementById('app'));
